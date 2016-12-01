@@ -236,3 +236,18 @@ a {
 @import "footer";
 @import "main-page";
 @import "media";
+
+/* #### FEEDBACK FORM #### */
+#quote-form {position: relative;}
+.pageLinks{text-decoration:none;}
+.blockVideoNews{text-align:center;padding-bottom:40px;}
+.blockVideoNews iframe{width:550px;margin-bottom:10px;}
+.newsImg img{max-width:325px;width:100%;}
+.errorform{border:1px solid #ee4e43 !important;}
+.error_box p, .reg_error_box p{text-align:center;color:#ee4e43;font-weight:bold;text-shadow:0px 0px 25px #FFF;}
+.error_box{position:absolute;left:33%;}
+.msgBox{text-align:center;font-size:40px;letter-spacing:5px;text-transform:none;text-shadow:0px 0px 25px #FFF;margin-top:15%;сolor:white;}
+.ourServicesList a{text-decoration:none;color:#fff;}
+.feedbackPreloader, .consultPreloader, .registerPreloader{display:none;margin: 0 auto;}
+a.fancybox{display:block;}
+/* #### FEEDBACK FORM #### */

@@ -306,19 +306,19 @@
 				}
 
 				@keyframes move1{
-					from{
-						margin-left: 0px;
+					0% {
+						left: -300px;
 					}
-					to{
-						margin-left: 400px;
+					100%{
+						left: 150px;
 					}
+					// left: 70px;
 				}
 
 				.caption {
 					position: absolute;
 					top: 0px;
-					left: -300px;
-					width: 200%;
+					width: 100%;
 					height: 100%;
 					color: #fff;
 					// -webkit-transform: scaleX(0);
@@ -338,11 +338,12 @@
 					transition: all 0.4s linear 0s;
 					display:none;
 
-					animation-direction: alternate;
-					animation-duration: 0.3s;
+					animation-direction: rigth;
+					animation-duration: 1s;
 					animation-name: move1;
-					animation-iteration-count: infinite;
+					animation-iteration-count: 1;
 					animation-timing-function: linear;
+					left: 150px;
 
 					p {
 						margin: 15px 0px;
@@ -360,11 +361,7 @@
 						// -o-transform: scaleX(1);
 						// transform: scaleX(1);
 						display: block;
-						left: -110%;
 
-						marquee {
-							color: rgba(255, 255, 255, 1);
-						}
 					}
 				}
 			}
