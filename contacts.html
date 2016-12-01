@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>lpwholesale</title>
+	<meta name="keywords" content="lpwholesale">
+
+	<link rel="shortcut icon" href="images/favicon.ico" >
+	<!-- Include media queries -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Include styles -->
+	<link rel="stylesheet" href="stylesheets/font-awesome.css">
+	<!--- Component CSS -->
+	<link rel="stylesheet" href="stylesheets/sticky.css">
+	<link rel="stylesheet" href="stylesheets/slick.css">
+	<link rel="stylesheet" href="stylesheets/slick-theme.css">
+	<link rel="stylesheet" href="stylesheets/lightbox/lightbox.css">
+	<link rel="stylesheet" href="stylesheets/semantic.min.css">
+	<link rel="stylesheet" href="stylesheets/dropdown.min.css">
+	<link rel="stylesheet" href="stylesheets/main_styles.css">
+
+</head>
+<body>
+	<header id="sticky-header sticky-header-contact-page" class="inside-page-header services-header">
+		<div class="wrapper">
+			<!-- mobile menu -->
+			<div class="dropdovn-menu-mobile">
+				<input type="checkbox" id="hmt" class="hidden-menu-ticker">
+				<label class="btn-menu" for="hmt">
+					<span class="first"></span>
+					<span class="second"></span>
+					<span class="third"></span>
+				</label>
+				<ul class="hidden-menu">
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="about.html">About Us</a>
+					</li>
+					<li>
+						<a href="services.html">Retail Options</a>
+					</li>
+					<li>
+						<a href="contacts.html">Contact Us</a>
+					</li>
+				</ul>
+			</div>
+			<div class="call-us-block">
+				<label for="hider">
+					<!-- <img src="images/icon-phone.png" alt="icon phone"> -->
+				</label>
+				<input type="checkbox" checked="no" id="hider">
+				<div id="info-mobile" class="header-info-mobile">
+					<a href="tel:8472434432">
+						<span class="phone">847-243-4432</span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!-- end- mobile menu -->
+
+		<div class="logo-with-menu">
+			<div class="main-menu">
+				<div class="wrapper">
+					<ul class="list-menu">
+						<li>
+							<a href="index.html">Home</a>
+						</li>
+						<li>
+							<a href="about.html">About Us</a>
+						</li>
+						<li>
+							<a href="services.html">Retail Options</a>
+						</li>
+						<li>
+							<a href="contacts.html">Contact Us</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="wrapper">
+				<div class="block-logo">
+					<h1 class="logo">
+						<a href="index.html">
+							<img src="images/logo.png" alt="logo">
+						</a>
+					</h1>
+				</div>
+				<div class="button_container" id="toggle">
+					<span class="top"></span>
+					<span class="middle"></span>
+					<span class="bottom"></span>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="site-container like-slider-page contact-page" onclick="$('.map-overflow').removeAttr('style')">
+		<section class="site-container poster-section">
+			<div class="under-rgba-layer"></div>
+			<img class="poster-img" src="images/contact-poster.jpg" alt="poster image">
+			<div class="wrapper">
+				<div class="contact-content">
+					<div class="wrapper">
+						<div class="contact-info">
+							<div class="contact-title">Contact Us</div>
+							<ul class="contact-info-list">
+								<li>
+									<h3 class="title">Address:</h3>
+									<h4 class="content">
+										<span>Licensed Products Wholesale </span>
+										<span>1110 Larkin Drive Wheeling, IL 60090</span>
+									</h4>
+								</li>
+								<li>
+									<h3 class="title">Phone:</h3>
+									<h4 class="content">
+										<a href="tel:8472434432">847-243-4432 </a>
+									</h4>
+								</li>
+								<li>
+									<h3 class="title">Fax:</h3>
+									<h4 class="content">
+										<a href="tel:8473063438">847-306-3438</a>
+									</h4>
+								</li>
+								<li>
+									<h3 class="title">E-mail:</h3>
+									<h4 class="content">
+										<a href="mailto:Name@website.com">Name@website.com</a>
+									</h4>
+								</li>
+							</ul>
+						</div>
+						<div class="feedback-form">
+							<h2 class="form-title">Quote Request</h2>
+							<div class="form-wrapper">
+								<form action="#" id="quote-form">
+									<div class="row first-name">
+										<label for="first-name">Name</label>
+										<input id="first-name" type="text" autocomplete="off">
+									</div>
+									<div class="row number">
+										<label for="number">Phone</label>
+										<input id="number" type="phone" autocomplete="off">
+									</div>
+									<div class="row email">
+										<label for="email">E-mail</label>
+										<input id="email" type="email" autocomplete="off">
+									</div>
+									<div class="row selection-block">
+										<span class="services-label">Retail Options</span>
+										<!-- <label>
+											<select id="select-services" class="ui dropdown" name="services item">
+												<option value="">Choose</option>
+												<option value="Shippers">Shippers</option>
+												<option value="Fun Shop">Fun Shop</option>
+												<option value="Clip Strips">Clip Strips</option>
+												<option value="End Cap">End Cap</option>
+												<option value="Hot Market">Hot Market</option>
+												<option value="Power Wings">Power Wings</option>
+											</select>
+										</label> -->
+										<div id="select-services" class="ui compact selection dropdown">
+											<i class="dropdown icon"></i>
+											<div class="text">Choose</div>
+											<div class="menu">
+												<div class="item">Shippers</div>
+												<div class="item">Fun Shop</div>
+												<div class="item">Clip Strips</div>
+												<div class="item">End Cap</div>
+												<div class="item">Hot Market</div>
+												<div class="item">Power Wings</div>
+											</div>
+										</div>
+									</div>
+									<div class="row message">
+										<label for="message">Message</label>
+										<textarea id="message"></textarea>
+									</div>
+									<input id="quote-sbm-btn" type="submit" name="submit" value="Send">
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</section>
+	<section class="site-container map-section contact-map-page">
+		<div class="wrapper">
+			<h2 class="section-position-title">
+				<span>Get Direrection</span>
+			</h2>
+		</div>
+		<div class="mapWrapper">
+			<!-- <div id="mapWrapper"> -->
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2959.5236575833414!2d-87.91343631051058!3d42.11767156243687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fb915723dd8c5%3A0xeac72ad010365aaf!2zMTExMCBMYXJraW4gRHIsIFdoZWVsaW5nLCBJTCA2MDA5MCwg0KHQv9C-0LvRg9GH0LXQvdGWINCo0YLQsNGC0Lgg0JDQvNC10YDQuNC60Lg!5e0!3m2!1suk!2sua!4v1479823981766" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<!-- </div> -->
+			<h5 class="map-overflow" onclick="$(this).css('display','none')">&nbsp;</h5>
+		</div>
+		<div class="prefooter">
+			<div class="wrapper">
+				<nav class="navigations-menu-block">
+				</nav>
+			</div>
+		</div>
+	</section>
+	<footer class="site-container inside-page-footer" onclick="$('.map-overflow').removeAttr('style')">
+		<div class="copyright">
+			<div class="wrapper">
+				<h3 class="copyright-sign">
+					<a href="http://globalvision.name/">Web Developmen</a> &copy; 
+					<a href="http://globalvision.name/">Global Vision</a>
+				</h3>
+			</div>
+		</div>
+	</footer>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/lightbox/lightbox.js"></script>
+	<!-- <script src="js/googleMapCustomize.js"></script> -->
+	<!-- <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCgDH4m_6s_NqTieahs1Ft9R4ndkKQk0N8&sensor=false&extension=.js'></script> -->
+	<script src="js/sticky-header.js"></script>
+	<script src="js/semantic.min.js"></script>
+	<script src="js/dropdown.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
