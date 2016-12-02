@@ -163,13 +163,6 @@ $(document).ready(function() {
       'wrapAround': true
   })
 });
-// slick navigation
-$(document).ready(function() {
-    $(function(){
-        $('#sticky-header').stickMe();
-    });
-
-});
 
 $(document).ready(function() {
     $('.ui.dropdown')
