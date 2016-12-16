@@ -1,0 +1,142 @@
+.about-us-page {
+	.poster-section {
+		height: 700px;
+	}
+	.bottom-slider {
+		position: absolute;
+		z-index: 2;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: auto;
+		padding: 15px 0;
+		background: rgba(0, 0, 0, 0.6);
+
+		.wrapper {
+			max-width: 100%;
+			padding: 0;
+		}
+
+		.prev-btn,
+		.next-btn {
+			position: absolute;
+			z-index: 2;
+			display: block;
+			width: 25px;
+			height: 37px;
+			color: #fff;
+			font-size: 30px;
+			top: 50%;
+			transform: translateY(-50%);
+			cursor: pointer;
+			z-index: 5;
+		}
+
+		.prev-btn {
+			left: 0;
+		}
+
+		.next-btn {
+			right: 0;
+		}
+
+		.slick-slide {
+			position: relative;
+			
+
+			img {
+				@include transition;
+			}
+
+			a {
+				position: relative;
+				display: block;
+				&:before {
+					content: "+";
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					display: block;
+					margin: -13px 0 0 -13px;
+					width: 35px;
+					height: 35px;
+					opacity: 0;
+					font-family: "Open Sans", sans-serif;
+					font-weight: 300;
+					font-size: 45px;
+					color: #fff;
+					z-index: 99;
+					-webkit-transition: all 0.3s ease;
+					-moz-transition: all 0.3s ease;
+					-o-transition: all 0.3s ease;
+					transition: all 0.3s ease;
+				}
+
+				&:after {
+					content: '';
+					height: 100%;
+					width: 100%;
+					position: absolute;
+					top: 0;
+					left: 0;
+					background: rgba(0,0,0,0.8);
+					opacity: 0;
+					-webkit-transition: all 0.3s ease;
+					-moz-transition: all 0.3s ease;
+					-o-transition: all 0.3s ease;
+					transition: all 0.3s ease;
+				}
+
+				&:hover {
+					&:before,
+					&:after {
+						opacity: 1;
+					}
+
+					img {
+						-webkit-transform: scale(1.1);
+						-moz-transform: scale(1.1);
+						-ms-transform: scale(1.1);
+						-o-transform: scale(1.1);
+						transform: scale(1.1);
+					}
+				}
+			}
+		}
+	}
+
+	.about-content {
+		position: absolute;
+		z-index: 1;
+		top: -200px;
+		margin-left: 0;
+
+		.about-title {
+			margin: 0 0 17px 0;
+			text-shadow: 0 4px 5px rgba(0, 0, 0, 0.24);
+			color: white;
+			font: 400 28px/30px "Swiss721BT", sans-serif;
+		}
+
+		.text-content {
+			max-width: 901px;
+			margin: 0;
+			padding: 0;
+			overflow-y: scroll;
+			-ms-overflow-style: none;
+			overflow: -moz-scrollbars-none;
+			height: 220px;
+
+			&::-webkit-scrollbar { 
+				width: 0 !important;
+			}
+
+			p {
+				margin: 0;
+				color: white;
+				font: 400 16px/20px "Swiss721BT", sans-serif;
+			}
+		}
+	}
+}

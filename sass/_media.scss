@@ -1,4 +1,354 @@
+
+@media (min-width: 768px) {
+	.like-slider-page {
+		.poster-section {
+			height: 640px;
+			.single-item {
+				position: absolute;
+				top: 150px;
+				z-index: 2;
+				max-width: 863px;
+				width: 80%;
+				height: 100%;
+				.slide {
+					position: relative;
+					min-height: 170px;
+					.position-content-block {
+						max-width: 525px;
+						width: 100%;
+						left: 70px;
+						top: 15px;
+						overflow: hidden;
+						.content-title {
+							margin: 0 0 29px;
+							color: white;
+							font: 400 34px / 36px $Swiss721BT;
+						}
+
+						.content-text {
+							color: white;
+							font: 400 22px/25px "Swiss721BT", sans-serif;
+						}
+					}
+				}
+
+				.next-btn,
+				.prev-btn {
+					position: absolute;
+					width: 33px;
+					height: 58px;
+					top: 35px;
+					color: #fff;
+					// background-image: none;
+					cursor: pointer;
+					z-index: 999;
+				}
+
+				.prev-btn {
+					left: -30px;
+				}
+
+				.next-btn {
+					right: -35px;
+				}
+			}
+
+			.more-block {
+				max-width: 600px;
+				top: 70px;
+				left: 50%;
+				transform: translateX(-50%);
+
+				.caption {
+					p {
+						padding-top: 0;
+						font-size: 18px;
+						line-height: 24px;
+					}
+				}
+
+				.more-btn {
+					font-size: 18px;
+					line-height: 24px;
+				}
+			}
+
+			.bottom-text {
+				padding: 8px 0 30px 0;
+
+				.bottom-text-title {
+					font-size: 27px;
+					line-height: 30px;
+				}
+
+				p {
+					font-size: 18px;
+					line-height: 20px;
+				}
+			}
+		}
+	}
+
+	.services-section {
+
+		.section-position-title {
+			top: -65px;
+		}
+		.services-list {
+			li {
+				display: inline-block;
+				width: 32%;
+
+				.icon-wrapper {
+					float: inherit;
+					margin: 0 auto;
+				}
+
+				.services-icon-title {
+					margin: 20px auto 0;
+					text-align: center;
+				}
+			}
+		}
+	}
+
+	.blog-tegs {
+		padding: 60px 0;
+	}
+	.quote-form-section {
+		// overflow: hidden;
+		.section-img-wrapper {
+			height: 655px;
+		}
+		.form-wrapper {
+			overflow: initial;
+			margin: 145px auto;
+			max-width: 595px;
+			width: 100%;
+			min-height: 310px;
+			padding: 8px 32px 30px 31px;
+			border: 2px solid white;
+			background: rgba(0, 0, 0, 0.4);
+			background-size: contain;
+
+			.first-name, 
+			.email {
+				width: 250px;
+				float: left;
+				clear: left;
+			}
+
+			.number,
+			.selection-block {
+				width: 264px;
+				float: right;
+				clear: right;
+			}
+		}
+	}
+
+	.map-section {
+		height: 625px;
+		.mapWrapper {
+			background: none;
+			iframe {
+				display: block !important;
+			}
+		}
+
+		.prefooter {
+			overflow: hidden;
+			margin: 0;
+			padding: 31px 0 47px;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			height: auto;
+			background: rgba(0, 0, 0, 0.6);
+			z-index: 1;
+
+			.navigations-menu-block {
+				background: none;
+			}
+
+			.footer-main-menu,
+			.footer-services-menu,
+			.social-block,	
+			.information-block {
+				float: left;
+				max-width: 25%;
+				width: 100%;
+
+				.block-title {
+					position: relative;
+					margin: 0 0 12px;
+					padding-bottom: 7px;
+					color: white;
+					font: 400 20px / 22px $Swiss721BT;
+
+					&:before {
+						position: absolute;
+						left: 0;
+						bottom: 0;
+						content: "";
+						width: 60px;
+						height: 3px;
+						background-color: #ff9001;
+					}
+				}
+			}
+			.footer-main-menu {
+				min-width: 80px;
+				max-width: 198px;
+				margin: 0 0 0 28px;
+			}
+			.footer-services-menu {
+				min-width: 120px;
+				max-width: 250px;
+				margin-top: 0;
+				margin-bottom: 0;
+			}
+			.information-block {
+				float: right;
+				width: 240px;
+				margin: 0 17px 0 0;
+				text-align: right;
+
+				.location {
+					margin: 18px 4px 15px 0;
+					text-align: right;
+					h3 {
+						color: white;
+						font: 400 16px / 20px $Swiss721BT;
+
+						span {
+							display: block;
+						}
+					}
+				}
+
+				.footer-phone {
+					display: block;
+					margin: 0 5px 0 0;
+					color: white;
+					font: 400 16px / 22px $Swiss721BT;
+
+					.fa {
+						padding-right: 7px;
+					}
+
+					img {
+						margin: 0 7px 0 0;
+					}
+				}
+
+				.block-title {
+					&:before {
+						right: 45px;
+						left: auto;
+					}
+				}
+			}
+
+			.footer-main-menu,
+			.footer-services-menu {
+				li {
+					display: block;
+					margin: 5px 0;
+					a {
+						font: 400 16px / 22px $Swiss721BT;
+						color: #fffefe;
+
+						&:hover {
+							color: #ff9001;
+						}
+					}
+				}
+			}
+
+			.footer-main-menu {
+				.footer-main-menu-list {
+					li {
+						a.footer-menu-active {
+							color: #ff9001;
+						}
+					}
+				}
+			}
+			.footer-services-menu {
+				li {
+					a.services-item-active {
+						color: #ff9001;
+					}
+				}
+			}
+		}
+	}
+
+	/*Services page*/
+	.services-poster {
+		.services-block {
+			.services-list {
+				li {
+					margin: 15px 45px;
+				}
+			}
+		}
+
+		.services-text {
+			padding: 40px 0 60px;
+		}
+	}
+
+	.contact-page {
+		.poster-section {
+			.contact-content {
+				.contact-info {
+					width: 40%;
+					float: left;
+				}
+			}
+		}
+	}
+	.contact-page {
+		.poster-section {
+			.contact-content {
+				.feedback-form {
+					width: 60%;
+					float: right;
+
+					.form-title {
+						margin: 0 0 10px;
+						text-align: right;
+					}
+				}
+			}
+		}
+	}
+	.contact-map-page {
+		display: block;
+	}
+
+	.services-more-page {
+		.services-more-content {
+			top: -170px;
+		}
+	}
+
+	.services-section {
+		.section-position-title {
+			top: -55px;
+		}
+	}
+}
+
+
 @media (min-width: 1024px) {
+
+	header {
+		border: none;
+	}
 
 	#sticky-header {
 		z-index: 99999;
@@ -82,6 +432,7 @@
 
 			.logo {
 				max-width: 160px;
+				width: 100%;
 				max-height: 120px;
 				margin: 8px auto;
 			}
@@ -286,6 +637,7 @@
 				z-index: 2;
 				top: 102px;
 				left: 14px;
+				transform: none;
 				border-bottom: 1px solid  #e17f00;
 
 				.more-btn {
@@ -296,6 +648,7 @@
 					background-color: #e17f00;
 					left: 0;
 					bottom: 0;
+					height: 35px;
 					color: white;
 					font: 400 18px / 22px $Swiss721BT;
 					@include transition;
@@ -430,112 +783,112 @@
 			margin: 0 auto;
 			text-align: center;
 			@include border-box;
-		}
-		.services-list {
-			max-width: 690px;
-			margin: 0 0 0 123px;
-			padding-left: 0;
-			li {
-				display: inline-block;
-				width: auto;
-				height: auto;
-				margin: 0 50px 40px;
 
-				&:first-child,
-				&:nth-child(4n+4) {
-					margin-left: 0;
-				}
-				&:last-child,
-				&:nth-child(3n+3) {
-					margin-right: 0;
-				}
+			.services-list {
+				max-width: 690px;
+				margin: 0 0 0 123px;
+				padding-left: 0;
+				li {
+					display: inline-block;
+					width: auto;
+					height: auto;
+					margin: 0 50px 40px;
 
-				.icon-wrapper {
-					width: 153px;
-					height: 225px;
-					overflow: hidden;
-					position: relative;
-					display: -webkit-box;
-					display: -ms-flexbox;
-					display: -webkit-flex;
-					display: flex;
-					-webkit-box-pack: center;
-					-ms-flex-pack: center;
-					-webkit-justify-content: center;
-					justify-content: center;
-					-webkit-box-align: center;
-					-ms-flex-align: center;
-					-webkit-align-items: center;
-					align-items: center;
-
-					img {
-						min-height: auto;
-						height: 100%;
-						min-width: auto;
-						max-width: none;
-						width: auto;
-						position: absolute;
-						top: 50%;
-						left: 50%;
-						-webkit-transform: translate(-50%, -50%);
-						-ms-transform: translate(-50%, -50%);
-						transform: translate(-50%, -50%);
-
-
-						filter: url("data:image/svg+xml;utf8,&lt;svg xmlns=\'http://www.w3.org/2000/svg\'&gt;&lt;filter id=\'grayscale\'&gt;&lt;feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale"); /* Firefox 10+, Firefox on Android */
-						filter: gray; /* IE6-9 */
-						-webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+					&:first-child,
+					&:nth-child(4n+4) {
+						margin-left: 0;
+					}
+					&:last-child,
+					&:nth-child(3n+3) {
+						margin-right: 0;
 					}
 
-					a {
-						display: block;
-						width: 100%;
-						height: 100%;
-					}
-				}
-
-				.services-icon-title {
-					margin: 12px auto 0;
-					color: white;
-					text-align: center;
-					font: 400 25px / 28px $Swiss721BT;
-					text-shadow: 0 4px 5px rgba(0, 0, 0, 0.24);
-
-					a {
-						color: #fff;
-						@include transition;
-					}
-				}
-
-				.icon-first,
-				.icon-second,
-				.icon-third,
-				.icon-fourth,
-				.icon-fifth,
-				.icon-sixth {
-					width: 153px;
-					height: 225px;
-					margin: 0 0 19px 0;
-					margin: 0 auto;
-					background-size: contain !important;
-					background-position: center !important;
-				}
-				&:hover {
 					.icon-wrapper {
+						width: 153px;
+						height: 225px;
+						overflow: hidden;
+						position: relative;
+						display: -webkit-box;
+						display: -ms-flexbox;
+						display: -webkit-flex;
+						display: flex;
+						-webkit-box-pack: center;
+						-ms-flex-pack: center;
+						-webkit-justify-content: center;
+						justify-content: center;
+						-webkit-box-align: center;
+						-ms-flex-align: center;
+						-webkit-align-items: center;
+						align-items: center;
+
 						img {
-							filter: url("data:image/svg+xml;utf8,&lt;svg xmlns=\'http://www.w3.org/2000/svg\'&gt;&lt;filter id=\'grayscale\'&gt;&lt;feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale");
-							-webkit-filter: grayscale(0%);
+							min-height: auto;
+							height: 100%;
+							min-width: auto;
+							max-width: none;
+							width: auto;
+							position: absolute;
+							top: 50%;
+							left: 50%;
+							-webkit-transform: translate(-50%, -50%);
+							-ms-transform: translate(-50%, -50%);
+							transform: translate(-50%, -50%);
+
+
+							filter: url("data:image/svg+xml;utf8,&lt;svg xmlns=\'http://www.w3.org/2000/svg\'&gt;&lt;filter id=\'grayscale\'&gt;&lt;feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale"); /* Firefox 10+, Firefox on Android */
+							filter: gray; /* IE6-9 */
+							-webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+						}
+
+						a {
+							display: block;
+							width: 100%;
+							height: 100%;
 						}
 					}
 
 					.services-icon-title {
+						margin: 12px auto 0;
+						color: white;
+						text-align: center;
+						font: 400 25px / 28px $Swiss721BT;
+						text-shadow: 0 4px 5px rgba(0, 0, 0, 0.24);
+
 						a {
-							color: #e17f00;
+							color: #fff;
+							@include transition;
+						}
+					}
+
+					.icon-first,
+					.icon-second,
+					.icon-third,
+					.icon-fourth,
+					.icon-fifth,
+					.icon-sixth {
+						width: 153px;
+						height: 225px;
+						margin: 0 0 19px 0;
+						margin: 0 auto;
+						background-size: contain !important;
+						background-position: center !important;
+					}
+					&:hover {
+						.icon-wrapper {
+							img {
+								filter: url("data:image/svg+xml;utf8,&lt;svg xmlns=\'http://www.w3.org/2000/svg\'&gt;&lt;filter id=\'grayscale\'&gt;&lt;feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale");
+								-webkit-filter: grayscale(0%);
+							}
+						}
+
+						.services-icon-title {
+							a {
+								color: #e17f00;
+							}
 						}
 					}
 				}
 			}
-
 		}
 	}
 
@@ -1363,10 +1716,19 @@
 
 	}
 
-	.poster-section {
-		width: 100%;
-		height: 1043px;
-		margin-top: -167px;
+	.like-slider-page {
+		.poster-section {
+			width: 100%;
+			height: 1043px;
+			margin-top: -167px;
+		}
+	}
+
+	.services-poster,
+	.contact-page {
+		.poster-section {
+			margin-top: 0;
+		}
 	}
 
 	// FOOTER
@@ -1652,7 +2014,7 @@
 	.about-us-page {
 		border-bottom: 5px solid #b36704;
 		.poster-section {
-			height: 858px;
+			// height: 858px;
 
 			.under-rgba-layer {
 				position: absolute;
@@ -1669,7 +2031,7 @@
 		.about-content {
 			position: absolute;
 			z-index: 1;
-			top: -210px;
+			top: -160px;
 			margin-left: 23px;			
 			.about-title {
 				margin: 0 0 22px 23px;
@@ -1729,6 +2091,8 @@
 				.slick-slider {
 					max-height: 280px;
 					overflow: hidden;
+					margin: 0 0 0 10px;
+					padding: 0;
 				}
 				.center {
 					max-height: 280px;
@@ -1742,8 +2106,8 @@
 						height: 37px;
 						color: #fff;
 						font-size: 30px;
-						top: 125px;
-						// transform: translate(-50%, -50%);
+						top: 50%;
+						transform: translateY(-50%);
 						cursor: pointer;
 						z-index: 5;
 					}
@@ -1757,7 +2121,8 @@
 					}
 
 					.slick-slide {
-						padding: 0 10px;
+						margin: 0 0 0 10px;
+						padding: 0;
 						max-height: 280px;
 						height: 280px;
 						overflow: hidden;
@@ -1889,7 +2254,7 @@
 	.services-more-page {
 		border-bottom: 5px solid #b36704;
 		.poster-section {
-			height: 731px;
+			height: 1043px;
 
 			.under-rgba-layer {
 				position: absolute;
@@ -2026,6 +2391,10 @@
 						&:hover {
 							border-color: #ccc;
 						}
+
+						a {
+							height: 280px;
+						}
 						img {
 							width: 100%;
 							height: auto;
@@ -2108,7 +2477,7 @@
 
 	.about-us-page {
 		.poster-section {
-			height: 858px;
+			height: 1051px;
 		}
 	}
 	.articles-more-page {
@@ -2118,7 +2487,7 @@
 	}
 	.services-more-page {
 		.poster-section {
-			height: 731px;
+			height: 1051px;
 		}
 	}
 

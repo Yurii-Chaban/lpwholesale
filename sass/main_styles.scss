@@ -31,6 +31,18 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'HelveticaNeueLTPro';
+	src: url('../resources/HelveticaNeueLTPro/HelveticaNeueLTPro-ThEx.eot');
+	src: url('../resources/HelveticaNeueLTPro/HelveticaNeueLTPro-ThEx.woff2') format('woff2'),
+	url('../resources/HelveticaNeueLTPro/HelveticaNeueLTPro-ThEx.woff') format('woff'),
+	url('../resources/HelveticaNeueLTPro/HelveticaNeueLTPro-ThEx.ttf') format('truetype'),
+	url('../resources/HelveticaNeueLTPro/HelveticaNeueLTPro-ThEx.svg#HelveticaNeueLTPro-ThEx') format('svg'),
+	url('../resources/HelveticaNeueLTPro/HelveticaNeueLTPro-ThEx.eot?#iefix') format('embedded-opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
 
 body {
 	font-family: 'Swiss721BT', 'Arial', 'Helvetica', sans-serif;
@@ -41,6 +53,7 @@ body {
 }
 
 $Swiss721BT: 'Swiss721BT', sans-serif;
+$HelveticaNeueLTPro: 'HelveticaNeueLTPro', sans-serif;
 
 @mixin site-container {
 	position: relative;
@@ -231,10 +244,17 @@ a {
 	}
 }
 
+* {
+	outline: none;
+}
 // ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 @import "header";
 @import "footer";
 @import "main-page";
+@import "about-us-page";
+@import "services-page";
+@import "services-more-page";
+@import "contact-page";
 @import "media";
 
 /* #### FEEDBACK FORM #### */

@@ -1,8 +1,6 @@
 footer {
 	@include site-container;
-	padding: 32px 0 0;
-	background-color: white;
-	box-shadow: 0 0 16px rgba(0, 0, 0, 0.34);
+	background-color: #e17f00;
 
 
 	.copyright {
@@ -11,56 +9,21 @@ footer {
 		padding: 5px 0;
 		text-align: center;
 		@include border-box;
-		background-color: #5ca7dc;
+		background-color: #e17f00;
 		.copyright-sign {
 			margin: 0 auto;
 			color: white;
-			font: 400 14px / 22px $Swiss721BT;
 
 			a {
+				font: 400 13px / 22px $Swiss721BT;
 				color: #fff;
 
 				&:hover {
 					text-decoration: underline;
 				}
-			}
-		}
-	}
-}
 
-.inside-page-footer {
-	.navigations-menu-block {
-		.footer-main-menu,
-		.footer-services-menu {
-			display: none;
-		}
-
-		.information-block {
-			.footer-phone {
-				display: block;
-				margin: 25px auto 0;
-				text-align: center;
-				color: black;
-				font: 300 21px / 35px $Swiss721BT;
-			}
-
-			.working-hours {
-				margin: 0 auto;
-				text-align: center;
-				color: black;
-				font: 300 21px / 35px $Swiss721BT;
-			}
-			.location {
-				margin: 15px auto;
-				text-align: center;
-				h3 {
-					text-align: center;
-					color: black;
-					font: 300 21px / 35px $Swiss721BT;
-
-					span { 
-						display: block;
-					}
+				&:nth-of-type(2) {
+					font: 400 13px / 22px $HelveticaNeueLTPro;
 				}
 			}
 		}
